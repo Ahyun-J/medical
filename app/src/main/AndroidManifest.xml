@@ -12,6 +12,51 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CareBout"
         tools:targetApi="31">
+
+        <activity
+            android:name=".Inoc.InoculationUpdateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Inoc.InoculationReadActivity"
+            android:exported="false"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".Inoc.InoculationWriteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Clinic.ClinicUpdateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Clinic.ClinicReadActivity"
+            android:exported="false"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".Clinic.ClinicWriteActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".Medicine.MedicineUpdateActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Medicine.MedicineWriteActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Medicine.MedicineReadActivity"
+            android:exported="false"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".Todo.TodoUpdateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Todo.TodoWriteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Todo.TodoReadActivity"
+            android:exported="false"
+            android:launchMode="singleTask" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -21,7 +66,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <receiver android:name=".Dailycare$Alarm"/>
     </application>
 
 </manifest>
