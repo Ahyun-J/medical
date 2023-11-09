@@ -44,8 +44,7 @@ class MainActivity : AppCompatActivity() {
 
         db = AppDatabase.getInstance(this)!!
 
-        var dailycare = Dailycare()
-        var tab: TabLayout = findViewById<TabLayout>(R.id.mainTab)
+        var tab: TabLayout = findViewById(R.id.mainTab)
 
         var selected: Fragment? = medicalNoteTab
 
@@ -60,7 +59,7 @@ class MainActivity : AppCompatActivity() {
                 } else if (position == 1) {
                     selected = medicalNoteTab
                 } else if (position == 2) {
-//                    dailycare.unSelectBorn(dailycare.views)
+                    medicalNoteTab.subUnselectBorn()
                     selected = medicalNoteTab
                 } else if (position == 3) {
                     selected = medicalNoteTab

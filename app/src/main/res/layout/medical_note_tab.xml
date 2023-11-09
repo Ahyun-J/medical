@@ -95,7 +95,7 @@
                 android:layout_height="447dp"
                 android:layout_marginLeft="13dp"
                 android:layout_marginRight="13dp"
-                android:background="#D3D3D3">
+                android:background="#FFFFFF">
 
                 <com.google.android.material.tabs.TabLayout
                     android:id="@+id/tabs"

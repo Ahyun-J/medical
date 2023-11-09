@@ -20,6 +20,10 @@ class MedicalNoteTab : Fragment() {
     val currentWeight = CurrentWeight()
     val mediing = Mediing()
 
+    fun subUnselectBorn() {
+        dailycare.unSelectBorn()
+    }
+
     @SuppressLint("MissingInflatedId")
     override fun onCreateView(
         inflater: LayoutInflater,
