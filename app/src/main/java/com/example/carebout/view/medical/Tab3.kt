@@ -14,8 +14,9 @@ import androidx.fragment.app.Fragment
 import com.example.carebout.R
 
 class Tab3 : Fragment() {
-    private val st = LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT)
+    // private val st = LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT)
 
+    /*
     fun setSheet(date: String, name: String, hpName: String) : View { // 약 정보 입력
         st.setMargins(0,30,0,30)
         var tablerow: TableRow = TableRow(this.context)     // 넣을 새 row 생성
@@ -40,6 +41,7 @@ class Tab3 : Fragment() {
 
         return tablerow
     }
+     */
 
     @SuppressLint("MissingInflatedId")
     override fun onCreateView(
@@ -47,14 +49,7 @@ class Tab3 : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val tab3View: View = inflater.inflate(R.layout.tab3, container, false)
-        val lay : TableLayout = tab3View.findViewById(R.id.sheetTableLay)
-
-        lay.addView(setSheet("23/3/5", "건강검진", "나루동물병원"))
-        lay.addView(setSheet("23/3/5", "건강검진", "나루동물병원"))
-        lay.addView(setSheet("23/3/5", "건강검진", "나루동물병원"))
-        lay.addView(setSheet("23/3/5", "건강검진", "나루동물병원"))
-        lay.addView(setSheet("23/3/5", "건강검진", "나루동물병원"))
+        val tab3View: View = inflater.inflate(R.layout.activity_clinic_read, container, false)
 
         return tab3View
     }

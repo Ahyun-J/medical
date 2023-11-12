@@ -14,8 +14,9 @@ import androidx.fragment.app.Fragment
 import com.example.carebout.R
 
 class Tab2 : Fragment() {
-    private val st = LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT)
+    // private val st = LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT)
 
+    /*
     fun setInoculation(date: String, name: String, expectedDate: String) : View { // 약 정보 입력
         st.setMargins(0,30,0,30)
         var tablerow: TableRow = TableRow(this.context)     // 넣을 새 row 생성
@@ -40,6 +41,7 @@ class Tab2 : Fragment() {
 
         return tablerow
     }
+     */
 
     @SuppressLint("MissingInflatedId")
     override fun onCreateView(
@@ -47,14 +49,7 @@ class Tab2 : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val tab2View: View = inflater.inflate(R.layout.tab2, container, false)
-        val lay : TableLayout = tab2View.findViewById(R.id.innoTableLay)
-
-        lay.addView(setInoculation("23/3/5", "심장사상충", "23/4/5"))
-        lay.addView(setInoculation("23/3/5", "심장사상충", "23/4/5"))
-        lay.addView(setInoculation("23/3/5", "심장사상충", "23/4/5"))
-        lay.addView(setInoculation("23/3/5", "심장사상충", "23/4/5"))
-        lay.addView(setInoculation("23/3/5", "심장사상충", "23/4/5"))
+        val tab2View: View = inflater.inflate(R.layout.activity_inoculation_read, container, false)
 
         return tab2View
     }
