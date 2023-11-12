@@ -11,12 +11,16 @@ import android.widget.TableLayout
 import android.widget.TableRow
 import android.widget.TextView
 import android.widget.ToggleButton
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.RecyclerView
 import com.example.carebout.R
+import com.example.carebout.view.medical.Medicine.MedicineReadActivity
 
 class Tab1 : Fragment() {
-    private val st = LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT)
+    // private val st = LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT)
 
+    /*
     fun setMedi(name: String, peri: String, memo: String, tag: String) : View { // 약 정보 입력
         st.setMargins(0,30,0,30)
         var tablerow: TableRow = TableRow(this.context)     // 넣을 새 row 생성
@@ -42,18 +46,7 @@ class Tab1 : Fragment() {
 
         return tablerow
     }
-
-    fun setTagButtonOnClick(tagButton: ToggleButton) {
-        tagButton.setOnClickListener {
-            if (tagButton.isChecked) {
-//                tagButton.setBackgroundDrawable(resources.getDrawable(R.drawable.fillborn))
-            } else {
-//                tagButton.setBackgroundDrawable(resources.getDrawable(R.drawable.bornn))
-                // sql 문으로
-            }
-        }
-    }
-
+    */
 
     @SuppressLint("MissingInflatedId")
     override fun onCreateView(
@@ -61,14 +54,7 @@ class Tab1 : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val tab1View: View = inflater.inflate(R.layout.tab1, container, false)
-        val lay : TableLayout = tab1View.findViewById(R.id.mediTableLay)
-
-        lay.addView(setMedi("감기약", "23/1/2~23/5/2", "간식에 섞어서 줄 것", "cold"))
-        lay.addView(setMedi("감기약", "23/1/2~23/5/2", "간식에 섞어서 줄 것", "cold"))
-        lay.addView(setMedi("감기약", "23/1/2~23/5/2", "간식에 섞어서 줄 것", "cold"))
-        lay.addView(setMedi("감기약", "23/1/2~23/5/2", "간식에 섞어서 줄 것", "cold"))
-        lay.addView(setMedi("감기약", "23/1/2~23/5/2", "간식에 섞어서 줄 것", "cold"))
+        val tab1View: View = inflater.inflate(R.layout.activity_medicine_read, container, false)
 
         return tab1View
     }
